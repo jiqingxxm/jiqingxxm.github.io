@@ -255,28 +255,107 @@ footer {
     color: #666;
 }
 
-@media (max-width: 768px) {
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-img {
-        width: 150px;
-        height: 150px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
+/* 移动端适配基础设置 */
+@media screen and (max-width: 768px) {
     .container {
         padding: 1rem;
+        width: 100%;
+    }
+
+    /* 个人信息卡片适配 */
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 133px;
+        margin: 0 auto 1rem;
+    }
+
+    /* 导航栏适配 */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* 研究领域适配 */
+    .research-item {
+        padding: 0.8rem;
+    }
+
+    /* 教育背景适配 */
+    .education-item {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .education-item i {
+        margin-bottom: 0.5rem;
+    }
+
+    /* 论文列表适配 */
+    .publication-item {
+        padding: 1rem;
+    }
+
+    .journal-metrics {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .journal-metrics span {
+        font-size: 0.8rem;
+    }
+
+    /* 项目列表适配 */
+    .project-item {
+        padding: 1rem;
+    }
+
+    .project-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* 技能列表适配 */
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .skill-tags {
+        width: 100%;
     }
 }
 
+/* 更小屏幕的特殊适配 */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .section-header i {
+        font-size: 1.5rem;
+    }
+}
 
 .profile-card {
     display: flex;
