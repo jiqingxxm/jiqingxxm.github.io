@@ -1,4 +1,8 @@
 **/.DS_Store
 .vscode/
-高校（无照片）/
-高校（有照片）/
+resume/
+*.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
