@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qing Ji - Academic Homepage</title>
+    <title>吉庆 - 个人学术主页</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- 添加 PlumX 脚本 -->
+    <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 </head>
 <body>
     <div class="hero">
@@ -13,15 +15,15 @@
             <div class="hero-content">
                 <div class="profile-card">
                     <div class="profile-image">
-                        <img src="jq.jpg" alt="Qing Ji">
+                        <img src="jq.jpg" alt="吉庆">
                     </div>
                     <div class="profile-info">
-                        <h1>Qing Ji</h1>
-                        <p class="title">Lecturer · Graduate Supervisor</p>
+                        <h1>吉庆</h1>
+                        <p class="title">讲师 · 研究生导师</p>
                         <div class="contact-info">
                             <div class="contact-item">
                                 <i class="fas fa-university"></i>
-                                <span>SEM, China University of Petroleum (Beijing)</span>
+                                <span>中国石油大学（北京）经济管理学院</span>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
@@ -34,13 +36,14 @@
         </div>
     </div>
 
+    <!-- 删除多余的嵌套，简化为单层结构 -->
     <nav class="sticky-nav">
         <div class="nav-links">
-            <a href="#research">Research</a>
-            <a href="#education">Education</a>
-            <a href="#publications">Publications</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+            <a href="#research">研究领域</a>
+            <a href="#education">教育背景</a>
+            <a href="#publications">学术论文</a>
+            <a href="#projects">科研项目</a>
+            <a href="#skills">专业技能</a>
         </div>
     </nav>
 
@@ -48,20 +51,21 @@
         <section id="research" class="section-card">
             <div class="section-header">
                 <i class="fas fa-flask"></i>
-                <h2>Research Areas</h2>
+                <h2>研究领域</h2>
             </div>
+            <!-- 研究领域部分 -->
             <div class="research-areas">
                 <div class="research-item">
                     <i class="fas fa-leaf"></i>
-                    <span>Energy Economics and Policy</span>
+                    <span>能源经济与政策</span>
                 </div>
                 <div class="research-item">
                     <i class="fas fa-plane"></i>
-                    <span>Aviation Economics</span>
+                    <span>航空经济</span>
                 </div>
                 <div class="research-item">
                     <i class="fas fa-chart-line"></i>
-                    <span>Empirical Industrial Organization</span>
+                    <span>实证产业组织</span>
                 </div>
             </div>
         </section>
@@ -69,74 +73,174 @@
         <section id="education" class="section-card">
             <div class="section-header">
                 <i class="fas fa-graduation-cap"></i>
-                <h2>Education</h2>
+                <h2>教育背景</h2>
             </div>
             <div class="education-list">
                 <div class="education-item">
                     <i class="fas fa-university"></i>
                     <div class="education-content">
-                        <h3>Beihang University</h3>
-                        <p class="period">Sep 2018 - Jan 2023</p>
-                        <p class="degree">Ph.D. in Management Science and Engineering</p>
+                        <h3>北京航空航天大学</h3>
+                        <p class="period">2018.09 - 2023.01</p>
+                        <p class="degree">博士，管理科学与工程</p>
                         <div class="advisors">
-                            <p class="advisor-title">Advisors: Prof. Ying Fan, Assoc. Prof. Chunan Wang</p>
+                            <p class="advisor-title">指导教师：范英教授、王楚男副教授</p>
                         </div>
-                        <p class="thesis">Dissertation: Environmental Effects of Policy Instruments in Transportation Sector</p>
+                        <p class="thesis">学位论文：《交通部门中政策工具的环境影响研究》</p>
                     </div>
                 </div>
 
                 <div class="education-item">
                     <i class="fas fa-university"></i>
                     <div class="education-content">
-                        <h3>North Carolina State University</h3>
-                        <p class="period">Sep 2018 - Jan 2023</p>
-                        <p class="degree">Ph.D. in Empirical Industrial Organization (Joint Program)</p>
-                        <p class="advisor-title">Advisor: Prof. Xiaoyong Zheng</p>
+                        <h3>北卡罗来纳州立大学</h3>
+                        <p class="period">2018.09 - 2023.01</p>
+                        <p class="degree">博士，实证产业组织（联培）</p>
+                        <p class="advisor-title">指导教师：郑霄勇教授</p>
                     </div>
                 </div>
 
                 <div class="education-item">
                     <i class="fas fa-university"></i>
                     <div class="education-content">
-                        <h3>China University of Petroleum (Beijing)</h3>
-                        <p class="period">Sep 2015 - Jun 2017</p>
-                        <p class="degree">M.A. in Industrial Economics</p>
-                        <p class="advisor-title">Advisor: Prof. Yijun Liu</p>
+                        <h3>中国石油大学（北京）</h3>
+                        <p class="period">2015.09 - 2017.06</p>
+                        <p class="degree">硕士，产业经济学</p>
+                        <p class="advisor-title">指导教师：刘毅军教授</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section-card">
+            <div class="section-header">
+                <i class="fas fa-book"></i>
+                <h2>学术论文</h2>
+            </div>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="publication-content">
+                        <div class="pub-header">
+                            <div class="journal-info">
+                                <h3>Transport Policy</h3>
+                                <div class="journal-metrics">
+                                    <span>SSCI</span>
+                                    <span>JCR Q1</span>
+                                    <span>IF: 6.3</span>
+                                    <span>FMS: A类</span>
+                                </div>
+                            </div>
+                        <!-- PlumX Widget -->
+                        <a href="https://plu.mx/plum/a/?doi=10.1016/j.tranpol.2024.10.005" 
+                            class="plumx-plum-print-popup"
+                            data-hide-when-empty="true"
+                            data-popup="right"
+                            data-size="large">
+                        </a>
+                        </div>
+                        <h3>Environmental and social welfare effects of aviation liberalization: Evidence from Central Asia and China market</h3>
+                        <p class="authors"><strong>Qing Ji</strong>, Weijun Liao, Chunan Wang*, Ying Fan*</p>
+                        <p class="pub-details">2024, 159: 44-56</p>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-content">
+                        <div class="pub-header">
+                            <div class="journal-info">
+                                <h3>Transport Economics and Management</h3>
+                                <div class="journal-metrics">
+                                    <span>SSCI</span>
+                                    <span>JCR Q2</span>
+                                    <span>IF: 4.2</span>
+                                </div>
+                            </div>
+                            <!-- PlumX Widget -->
+                            <a href="https://plu.mx/plum/a/?doi=10.1016/j.team.2024.08.002" 
+                                class="plumx-plum-print-popup"
+                                data-hide-when-empty="true"
+                                data-popup="right"
+                                data-size="large">
+                            </a>
+                        </div>
+                        <h3>Carbon Pricing and Airline Network Selection: A Four-Network Perspective</h3>
+                        <p class="authors">Weijun Liao, Yingying Yin, <strong>Qing Ji</strong>, Chunan Wang</p>
+                        <p class="pub-details">2024, 2: 227-241</p>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-content">
+                        <div class="pub-header">
+                            <div class="journal-info">
+                                <h3>Energy Economics</h3>
+                                <div class="journal-metrics">
+                                    <span>SSCI</span>
+                                    <span>JCR Q1</span>
+                                    <span>IF: 13.6</span>
+                                </div>
+                            </div>
+                            <!-- PlumX Widget -->
+                            <a href="https://plu.mx/plum/a/?doi=10.1016/j.eneco.2022.106377" 
+                               class="plumx-plum-print-popup"
+                               data-hide-when-empty="true"
+                               data-popup="right"
+                               data-size="large">
+                            </a>
+                        </div>
+                        <h3>Environmental and Welfare Effects of Vehicle Purchase Tax: Evidence from China</h3>
+                        <p class="authors"><strong>Qing Ji</strong>, Chunan Wang, Ying Fan*</p>
+                        <p class="pub-details">2022, 115: 106377</p>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-content">
+                        <div class="pub-header">
+                            <div class="journal-info">
+                                <h3>Journal of the Association of Environmental and Resource Economists</h3>
+                                <div class="journal-metrics">
+                                    <span class="status">Revise and Resubmit, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Quantifying the Welfare Effects of Battery Electric Vehicle Subsidies: Evidence from China</h3>
+                        <p class="authors"><strong>Qing Ji</strong>, Chunan Wang*, Xiaoyong Zheng, Ying Fan*</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <section id="projects" class="section-card">
             <div class="section-header">
                 <i class="fas fa-project-diagram"></i>
-                <h2>Research Projects</h2>
+                <h2>科研项目</h2>
             </div>
             <div class="projects-list">
                 <div class="project-item">
                     <div class="project-badge">
                         <i class="fas fa-award"></i>
-                        <span class="project-type">China Postdoctoral Science Foundation</span>
+                        <span class="project-type">中国博士后科学基金项目</span>
                     </div>
                     <div class="project-content">
-                        <h3>Optimization of Emission Reduction Pathways in China's Civil Aviation Industry under Carbon Neutrality Goals</h3>
+                        <h3>"双碳"目标下我国民航业减排路径优化与方案设计</h3>
                         <div class="project-details">
                             <span class="project-number">No. 2024M763637</span>
-                            <span class="project-status">76th Batch General Program, Ongoing</span>
+                            <span class="project-status">第76批面上资助，在研</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-item">
                     <div class="project-badge">
-                        <i class="fas fa-university"></i>
-                        <span class="project-type">CUPB University Grant</span>
+                        <i class="fas fa-award"></i>
+                        <span class="project-type">中国石油大学（北京）校级项目</span>
                     </div>
                     <div class="project-content">
-                        <h3>Research on Emission Reduction Pathways and Policies in China's Aviation Industry under Carbon Neutrality Goals</h3>
+                        <h3>"双碳"目标下我国航空业减排路径与政策研究</h3>
                         <div class="project-details">
                             <span class="project-number">No. 2462023YJRC025</span>
-                            <span class="project-status">Ongoing</span>
+                            <span class="project-status">在研</span>
                         </div>
                     </div>
                 </div>
@@ -146,25 +250,25 @@
         <section id="skills" class="section-card">
             <div class="section-header">
                 <i class="fas fa-tools"></i>
-                <h2>Professional Skills</h2>
+                <h2>专业技能</h2>
             </div>
             <div class="skills-list">
-                <!-- <div class="skill-item">
+                <div class="skill-item">
                     <div class="skill-title">
                         <i class="fas fa-chart-line"></i>
-                        <span>Data Analysis</span>
+                        <span>数据分析</span>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Matlab</span>
                         <span class="skill-tag">Stata</span>
                     </div>
-                </div> -->
+                </div>
             
                 <div class="skill-item">
                     <div class="skill-title">
                         <i class="fas fa-database"></i>
-                        <span>Database</span>
+                        <span>数据库</span>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">MySQL</span>
@@ -174,12 +278,9 @@
                 <div class="skill-item">
                     <div class="skill-title">
                         <i class="fas fa-code"></i>
-                        <span>Tools</span>
+                        <span>开发工具</span>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Matlab</span>
-                        <span class="skill-tag">Stata</span>
                         <span class="skill-tag">VScode</span>
                         <span class="skill-tag">GitHub</span>
                     </div>
@@ -190,7 +291,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Qing Ji | Last Updated: April 2025</p>
+            <p>© 2025 吉庆 | 更新日期：2025年4月</p>
         </div>
     </footer>
 </body>
