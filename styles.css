@@ -19,104 +19,20 @@ body {
     color: var(--text-color);
 }
 
-/* 页面基本设置 */
-.page {
-    min-height: 100vh;  /* 确保每页至少占满一屏 */
-    padding: 2rem 0;    /* 上下留白 */
-    break-after: page;  /* 强制分页 */
-    position: relative; /* 用于定位内部元素 */
-}
-
-/* 调整容器样式 */
+/* 基础容器样式 */
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* 调整导航栏，只在第一页显示 */
-.sticky-nav {
-    position: sticky;
-    top: 1rem;
-    z-index: 100;
-    margin: 1rem 0;
-}
-
-/* 打印样式优化 */
-@media print {
-    .page {
-        height: 100vh;
-        margin: 0;
-        padding: 2rem 0;
-        page-break-after: always;
-    }
-    
-    .sticky-nav {
-        display: none; /* 打印时隐藏导航栏 */
-    }
 }
 
 /* 个人信息卡片响应式 */
 .profile-card {
     display: flex;
-    gap: 2.5rem;  /* 增加间距 */
-    padding: 2.5rem;  /* 增加内边距 */
-    background: var(--card-background);
-    border-radius: 16px;  /* 增加圆角 */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);  /* 优化阴影效果 */
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;  /* 调整元素间距 */
-}
-
-.profile-info h1 {
-    font-size: 2.4rem;  /* 增大标题字号 */
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 0.2rem;
-}
-
-.profile-info .title {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.contact-info {
-    margin-top: 0.5rem;
-}
-
-.contact-item {
-    display: flex;
+    gap: 2rem;
+    padding: 2rem;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
-}
-
-.contact-item i {
-    font-size: 1.1rem;
-    color: #3498db;  /* 统一图标颜色 */
-    opacity: 0.9;
-}
-
-.contact-item span {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.5;
-}
-
-/* 添加悬停效果 */
-.contact-item:hover {
-    transform: translateX(5px);
-    transition: transform 0.3s ease;
 }
 
 .profile-image img {
@@ -638,45 +554,23 @@ footer {
 .education-item {
     display: flex;
     gap: 1.5rem;
-    padding: 1.2rem;
+    padding: 1.2rem;  /* 从 1.5rem 减小到 1.2rem */
     background-color: #f8f9fa;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
-.education-item i {
-    font-size: 1.3rem;
-    color: #3498db;
-    margin-top: 0.2rem; /* 微调图标位置，与标题对齐 */
-    width: 1.8rem; /* 固定宽度 */
-    text-align: center; /* 居中对齐 */
-}
-
-.education-content {
-    flex: 1;
-}
-
+/* 调整内部文字的间距 */
 .education-content h3 {
-    color: #2c3e50;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center; /* 垂直居中 */
+    margin-bottom: 0.3rem;  /* 从 0.5rem 减小到 0.3rem */
 }
 
-/* 其他样式保持不变 */
 .period {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    margin-left: 0; /* 确保左对齐 */
+    margin-bottom: 0.3rem;  /* 从 0.5rem 减小到 0.3rem */
 }
 
 .degree {
-    color: #2c3e50;
-    font-weight: 500;
-    margin-bottom: 0.8rem;
-    margin-left: 0; /* 确保左对齐 */
+    margin-bottom: 0.5rem;  /* 从 1rem 减小到 0.5rem */
 }
 
 .advisors {
