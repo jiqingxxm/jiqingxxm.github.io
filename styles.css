@@ -364,11 +364,21 @@ h2 {
     gap: 0.8rem;  /* 从 1rem 减小到 0.8rem */
 }
 
+/* PlumX 指标图标样式 */
+.plumx-container {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+/* 确保出版物项目有相对定位，以便绝对定位的子元素能够正确定位 */
 .publication-item {
     position: relative;
     background-color: #f8f9fa;
     border-radius: 12px;
     padding: 1.2rem;
+    padding-bottom: 3rem; /* 增加底部padding，为PlumX图标留出空间 */
     transition: all 0.3s ease;
     margin-bottom: 25px;
     border-left: 3px solid #3498db;
@@ -404,30 +414,27 @@ h2 {
 }
 
 /* 期刊信息和指标样式 */
-.journal-info h4 {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 .journal-metrics {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px; /* 减小徽章之间的间距 */
     margin-left: 10px;
+    align-items: center;
 }
 
 .metric-badge {
     padding: 3px 8px;
     border-radius: 12px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600; /* 加粗字体 */
     background-color: #f0f0f0;
     color: #555;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px; /* 设置最小宽度 */
+    height: 22px; /* 固定高度 */
+    text-align: center;
 }
 
 /* 不同类型指标的颜色 */
@@ -550,16 +557,18 @@ h2 {
     padding-bottom: 10px;
     border-bottom: 2px solid #3498db;
     position: relative;
+    text-align: center; /* 添加居中对齐 */
 }
 
 .year-header:after {
     content: '';
     position: absolute;
     bottom: -2px;
-    left: 0;
+    left: 50%; /* 从左侧0改为50% */
     width: 60px;
     height: 2px;
     background-color: #e74c3c;
+    transform: translateX(-50%); /* 添加水平居中变换 */
 }
 
 /* 年份徽章样式 */
@@ -580,8 +589,9 @@ h2 {
 .publication-filters {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
+    justify-content: center; /* 添加水平居中对齐 */
 }
 
 .filter-btn {
@@ -591,6 +601,7 @@ h2 {
     border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 500; /* 添加字体加粗 */
     transition: all 0.3s ease;
 }
 
@@ -598,6 +609,7 @@ h2 {
     background-color: #3498db;
     color: white;
     border-color: #3498db;
+    font-weight: 600; /* 活跃状态下更加加粗 */
 }
 
 /* ===== 项目样式 ===== */
