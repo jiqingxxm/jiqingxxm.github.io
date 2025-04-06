@@ -114,133 +114,179 @@
                 <i class="fas fa-book"></i>
                 <h2>Publications</h2>
             </div>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <div class="pub-header">
-                            <div class="journal-info">
-                                <h3>Journal of Air Transport Management</h3>
-                                <div class="journal-metrics">
-                                    <span>SSCI</span>
-                                    <span>JCR Q2</span>
-                                    <span>AJG 1</span>
-                                    <span>IF: 3.9</span>
+            
+            <!-- 添加论文分类标签 -->
+            <div class="publication-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="journal">Journal Articles</button>
+                <button class="filter-btn" data-filter="working">Working Papers</button>
+            </div>
+            
+            <!-- 2025年论文 -->
+            <div class="year-section">
+                <h3 class="year-header">2025</h3>
+                <div class="publications-list">
+                    <div class="publication-item" data-type="journal">
+                        <div class="publication-content">
+                            <h3 class="publication-title">The Effect of Financial Performance on Aviation Carbon Emissions</h3>
+                            <div class="pub-header">
+                                <div class="journal-info">
+                                    <h4>Journal of Air Transport Management <span class="journal-metrics">
+                                        <span class="metric-badge ssci">SSCI</span>
+                                        <span class="metric-badge q1">JCR Q1</span>
+                                        <span class="metric-badge if">IF: 7.2</span>
+                                    </span></h4>
                                 </div>
+                                <!-- PlumX Widget -->
+                                <a href="https://plu.mx/plum/a/?doi=10.1016/j.jairtraman.2025.102800" 
+                                    class="plumx-plum-print-popup"
+                                    data-hide-when-empty="true"
+                                    data-popup="right"
+                                    data-size="large">
+                                </a>
                             </div>
-                            <!-- PlumX Widget -->
-                            <a href="https://plu.mx/plum/a/?doi=10.1016/j.jairtraman.2025.102800" 
-                                class="plumx-plum-print-popup"
-                                data-hide-when-empty="true"
-                                data-popup="right"
-                                data-size="large">
-                            </a>
+                            <p class="authors">Shuai Yue, Weijun Liao, <strong>Qing Ji</strong>, Chunan Wang</p>
+                            <p class="pub-details">2025, 126: 102800</p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://doi.org/10.1016/j.jairtraman.2025.102800" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
+                                <button class="pub-link abstract-toggle"><i class="fas fa-align-left"></i> Abstract</button>
+                            </div>
+                            <div class="pub-abstract">
+                                <p>This paper examines the relationship between financial performance and carbon emissions in the aviation industry...</p>
+                            </div>
                         </div>
-                        <h3>The Effect of Financial Performance on Aviation Carbon Emissions</h3>
-                        <p class="authors">Shuai Yue, Weijun Liao, <strong>Qing Ji</strong>, Chunan Wang</p>
-                        <p class="pub-details">2025, 126: 102800</p>
                     </div>
-                </div>
 
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <div class="pub-header">
-                            <div class="journal-info">
-                                <h3>Transport Policy</h3>
-                                <div class="journal-metrics">
-                                    <span>SSCI</span>
-                                    <span>JCR Q1</span>
-                                    <span>AJG 2</span>
-                                    <span>IF: 6.3</span>
-                                    <span>FMS: A类</span>
+                    <div class="publication-item" data-type="working">
+                        <div class="publication-content">
+                            <h3 class="publication-title">Quantifying the Welfare Effects of Battery Electric Vehicle Subsidies: Evidence from China</h3>
+                            <div class="pub-header">
+                                <div class="journal-info">
+                                    <h4>Journal of the Association of Environmental and Resource Economists <span class="journal-metrics">
+                                        <span class="status-badge revise">R&R, 2025</span>
+                                    </span></h4>
                                 </div>
                             </div>
-                        <!-- PlumX Widget -->
-                        <a href="https://plu.mx/plum/a/?doi=10.1016/j.tranpol.2024.10.005" 
-                            class="plumx-plum-print-popup"
-                            data-hide-when-empty="true"
-                            data-popup="right"
-                            data-size="large">
-                        </a>
-                        </div>
-                        <h3>Environmental and social welfare effects of aviation liberalization: Evidence from Central Asia and China market</h3>
-                        <p class="authors"><strong>Qing Ji</strong>, Weijun Liao, Chunan Wang*, Ying Fan*</p>
-                        <p class="pub-details">2024, 159: 44-56</p>
-                    </div>
-                </div>
-                
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <div class="pub-header">
-                            <div class="journal-info">
-                                <h3>Transport Economics and Management</h3>
-                                <div class="journal-metrics">
-                                    <!-- <span>SSCI</span>
-                                    <span>JCR Q2</span>
-                                    <span>IF: 4.2</span> -->
-                                </div>
+                            <p class="authors"><strong>Qing Ji</strong>, Chunan Wang*, Xiaoyong Zheng, Ying Fan*</p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Working Paper</a>
+                                <button class="pub-link abstract-toggle"><i class="fas fa-align-left"></i> Abstract</button>
                             </div>
-                            <!-- PlumX Widget -->
-                            <a href="https://plu.mx/plum/a/?doi=10.1016/j.team.2024.08.002" 
-                                class="plumx-plum-print-popup"
-                                data-hide-when-empty="true"
-                                data-popup="right"
-                                data-size="large">
-                            </a>
+                            <div class="pub-abstract">
+                                <p>This paper quantifies the welfare effects of battery electric vehicle subsidy policies in China...</p>
+                            </div>
                         </div>
-                        <h3>Carbon Pricing and Airline Network Selection: A Four-Network Perspective</h3>
-                        <p class="authors">Weijun Liao, Yingying Yin, <strong>Qing Ji</strong>, Chunan Wang</p>
-                        <p class="pub-details">2024, 2: 227-241</p>
                     </div>
-                </div>
+            </div>
 
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <div class="pub-header">
-                            <div class="journal-info">
-                                <h3>Energy Economics</h3>
-                                <div class="journal-metrics">
-                                    <span>SSCI</span>
-                                    <span>JCR Q1</span>
-                                    <span>AJG 3</span>
-                                    <span>IF: 13.6</span>
+            <!-- 2024年论文 -->
+            <div class="year-section">
+                <h3 class="year-header">2024</h3>
+                <div class="publications-list">
+                    <div class="publication-item" data-type="journal">
+                        <div class="publication-content">
+                            <h3 class="publication-title">Environmental and social welfare effects of aviation liberalization: Evidence from Central Asia and China market</h3>
+                            <div class="pub-header">
+                                <div class="journal-info">
+                                    <h4>Transport Policy <span class="journal-metrics">
+                                        <span class="metric-badge ssci">SSCI</span>
+                                        <span class="metric-badge q1">JCR Q1</span>
+                                        <span class="metric-badge if">IF: 6.3</span>
+                                        <span class="metric-badge fms">FMS: A类</span>
+                                    </span></h4>
                                 </div>
+                                <!-- PlumX Widget -->
+                                <a href="https://plu.mx/plum/a/?doi=10.1016/j.tranpol.2024.10.005" 
+                                    class="plumx-plum-print-popup"
+                                    data-hide-when-empty="true"
+                                    data-popup="right"
+                                    data-size="large">
+                                </a>
                             </div>
-                            <!-- PlumX Widget -->
-                            <a href="https://plu.mx/plum/a/?doi=10.1016/j.eneco.2022.106377" 
-                                class="plumx-plum-print-popup"
-                                data-hide-when-empty="true"
-                                data-popup="right"
-                                data-size="large">
-                            </a>
+                            <p class="authors"><strong>Qing Ji</strong>, Weijun Liao, Chunan Wang*, Ying Fan*</p>
+                            <p class="pub-details">2024, 159: 44-56</p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://doi.org/10.1016/j.tranpol.2024.10.005" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
+                                <button class="pub-link abstract-toggle"><i class="fas fa-align-left"></i> Abstract</button>
+                            </div>
+                            <div class="pub-abstract">
+                                <p>This study investigates the environmental and social welfare effects of aviation liberalization between Central Asia and China...</p>
+                            </div>
                         </div>
-                        <h3>Environmental and Welfare Effects of Vehicle Purchase Tax: Evidence from China</h3>
-                        <p class="authors"><strong>Qing Ji</strong>, Chunan Wang, Ying Fan*</p>
-                        <p class="pub-details">2022, 115: 106377</p>
+                    </div>
+                    
+                    <div class="publication-item" data-type="journal">
+                        <div class="publication-content">
+                            <h3 class="publication-title">Carbon Pricing and Airline Network Selection: A Four-Network Perspective</h3>
+                            <div class="pub-header">
+                                <div class="journal-info">
+                                    <h4>Transport Economics and Management <span class="journal-metrics">
+                                        <!-- <span class="metric-badge">SSCI</span>
+                                        <span class="metric-badge">JCR Q2</span>
+                                        <span class="metric-badge">IF: 4.2</span> -->
+                                    </span></h4>
+                                </div>
+                                <!-- PlumX Widget -->
+                                <a href="https://plu.mx/plum/a/?doi=10.1016/j.team.2024.08.002" 
+                                    class="plumx-plum-print-popup"
+                                    data-hide-when-empty="true"
+                                    data-popup="right"
+                                    data-size="large">
+                                </a>
+                            </div>
+                            <p class="authors">Weijun Liao, Yingying Yin, <strong>Qing Ji</strong>, Chunan Wang</p>
+                            <p class="pub-details">2024, 2: 227-241</p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://doi.org/10.1016/j.team.2024.08.002" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
+                                <button class="pub-link abstract-toggle"><i class="fas fa-align-left"></i> Abstract</button>
+                            </div>
+                            <div class="pub-abstract">
+                                <p>This research examines how carbon pricing policies influence airline network selection decisions...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="publication-item">
-                    <div class="publication-content">
-                        <div class="pub-header">
-                            <div class="journal-info">
-                                <h3>Journal of the Association of Environmental and Resource Economists</h3>
-                                <div class="journal-metrics">
-                                    <span class="status">Revise and Resubmit, 2025</span>
+            <!-- 2022年论文 -->
+            <div class="year-section">
+                <h3 class="year-header">2022</h3>
+                <div class="publications-list">
+                    <div class="publication-item" data-type="journal">
+                        <div class="publication-content">
+                            <h3 class="publication-title">Environmental and Welfare Effects of Vehicle Purchase Tax: Evidence from China</h3>
+                            <div class="pub-header">
+                                <div class="journal-info">
+                                    <h4>Energy Economics <span class="journal-metrics">
+                                        <span class="metric-badge ssci">SSCI</span>
+                                        <span class="metric-badge q1">JCR Q1</span>
+                                        <span class="metric-badge if">IF: 13.6</span>
+                                    </span></h4>
                                 </div>
+                                <!-- PlumX Widget -->
+                                <a href="https://plu.mx/plum/a/?doi=10.1016/j.eneco.2022.106377" 
+                                    class="plumx-plum-print-popup"
+                                    data-hide-when-empty="true"
+                                    data-popup="right"
+                                    data-size="large">
+                                </a>
                             </div>
-                            <!-- PlumX Widget -->
-                            <!-- <a href="https://plu.mx/plum/a/?doi=10.1016/j.tranpol.2024.10.005" 
-                                class="plumx-plum-print-popup"
-                                data-hide-when-empty="true"
-                                data-popup="right"
-                                data-size="large">
-                            </a> -->
+                            <p class="authors"><strong>Qing Ji</strong>, Chunan Wang, Ying Fan*</p>
+                            <p class="pub-details">2022, 115: 106377</p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://doi.org/10.1016/j.eneco.2022.106377" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
+                                <button class="pub-link abstract-toggle"><i class="fas fa-align-left"></i> Abstract</button>
+                            </div>
+                            <div class="pub-abstract">
+                                <p>This study evaluates the environmental and welfare effects of vehicle purchase tax policies in China...</p>
+                            </div>
                         </div>
-                        <h3>Quantifying the Welfare Effects of Battery Electric Vehicle Subsidies: Evidence from China</h3>
-                        <p class="authors"><strong>Qing Ji</strong>, Chunan Wang*, Xiaoyong Zheng, Ying Fan*</p>
                     </div>
                 </div>
-
             </div>
         </section>
 

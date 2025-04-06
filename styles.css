@@ -877,3 +877,249 @@ section {
     font-size: 0.95rem;
     color: #666;
 }
+
+/* 论文部分样式 */
+.publication-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.publication-item {
+    position: relative;
+    margin-bottom: 30px;
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.pub-year-badge {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.publication-title {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.journal-info h4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.journal-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.metric-badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.metric-badge.ssci {
+    background-color: #4caf50;
+    color: white;
+}
+
+.metric-badge.q1 {
+    background-color: #2196f3;
+    color: white;
+}
+
+.metric-badge.if {
+    background-color: #ff9800;
+    color: white;
+}
+
+.metric-badge.fms {
+    background-color: #9c27b0;
+    color: white;
+}
+
+.status-badge {
+    background-color: #e91e63;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.authors {
+    margin: 10px 0;
+    color: #555;
+}
+
+.pub-details {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.pub-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.pub-link:hover {
+    background-color: #e0e0e0;
+}
+
+.pub-abstract {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+    display: none;
+}
+
+/* 年份分组样式 */
+.year-section {
+    margin-bottom: 40px;
+}
+
+.year-header {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    position: relative;
+}
+
+.year-header:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #e74c3c;
+}
+
+/* 移除年份徽章，因为现在已经按年份分组 */
+.pub-year-badge {
+    display: none;
+}
+
+/* 调整论文项目的左边框样式 */
+.publication-item {
+    border-left: 3px solid #3498db;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* 调整期刊信息和标签布局 */
+.journal-info h4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.journal-metrics {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.metric-badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    color: #555;
+}
+
+.metric-badge.ssci {
+    background-color: #4caf50;
+    color: white;
+}
+
+.metric-badge.q1 {
+    background-color: #2196f3;
+    color: white;
+}
+
+.metric-badge.if {
+    background-color: #ff9800;
+    color: white;
+}
+
+.metric-badge.fms {
+    background-color: #9c27b0;
+    color: white;
+}
+
+/* 工作论文状态标签样式 */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    background-color: #6c757d; /* 默认灰色背景 */
+}
+
+.status-badge.revise {
+    background-color: #dc3545; /* 红色背景 */
+}
