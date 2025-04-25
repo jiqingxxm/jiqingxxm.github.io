@@ -776,17 +776,17 @@ h2 {
     .skill-category {
         padding: 1.2rem;
     }
-    
+
     .skill-header i {
         font-size: 1.5rem;
         width: 35px;
         height: 35px;
     }
-    
+
     .skill-header h3 {
         font-size: 1.2rem;
     }
-    
+
     .skill-tag {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
@@ -840,7 +840,7 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .footer-info {
         margin-bottom: 1.5rem;
     }
@@ -884,4 +884,118 @@ footer {
 .contact-item i {
     width: 1.5rem;
     color: #0056b3;
+}
+
+/* CSS修改
+
+以下是结合两次修改建议的CSS样式：
+```css
+/* 期刊审稿人部分样式 */
+.reviewer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.reviewer-category {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.reviewer-category:hover {
+    transform: translateX(10px);
+    background-color: #e9ecef;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.category-header {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.category-header i {
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* 期刊类别特定颜色和背景 */
+.reviewer-category:nth-child(1) .category-header i {
+    color: #4CAF50; /* 绿色 - 环保经济 */
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.reviewer-category:nth-child(2) .category-header i {
+    color: #2196F3; /* 蓝色 - 交通 */
+    background-color: rgba(33, 150, 243, 0.1);
+}
+
+.reviewer-category:nth-child(3) .category-header i {
+    color: #9C27B0; /* 紫色 - 机器学习 */
+    background-color: rgba(156, 39, 176, 0.1);
+}
+
+.reviewer-item {
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.reviewer-item:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.reviewer-content {
+    display: flex;
+    align-items: center;
+}
+
+.journal-info {
+    display: flex;
+    align-items: center;
+}
+
+.journal-info h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+/* 复用论文部分的期刊指标样式 */
+.journal-metrics {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .reviewer-category {
+        padding: 1.2rem;
+    }
+
+    .category-header {
+        font-size: 1.2rem;
+    }
+
+    .journal-info h4 {
+        font-size: 1rem;
+    }
 }

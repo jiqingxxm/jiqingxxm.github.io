@@ -45,7 +45,7 @@
             <a href="#education">Education</a>
             <a href="#publications">Publications</a>
             <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+            <a href="#reviewer">Reviewer</a>
         </div>
     </nav>
 
@@ -129,7 +129,7 @@
             <div class="year-section">
                 <h3 class="year-header">2025</h3>
                 <div class="publications-list">
-                    <div class="publication-item" data-type="journal">
+                    <article class="publication-item" data-type="journal"> <!-- 使用 <article> -->
                         <div class="publication-content">
                             <h3 class="publication-title">The Effect of Financial Performance on Aviation Carbon Emissions</h3>
                             <div class="pub-header">
@@ -159,9 +159,9 @@
                                 <p>This paper examines the relationship between financial performance and carbon emissions in the aviation industry...</p>
                             </div>
                         </div>
-                    </div>
+                    </article> <!-- 结束 <article> -->
 
-                    <div class="publication-item" data-type="working">
+                    <article class="publication-item" data-type="working"> <!-- 使用 <article> -->
                         <div class="publication-content">
                             <h3 class="publication-title">Quantifying the Welfare Effects of Battery Electric Vehicle Subsidies: Evidence from China</h3>
                             <div class="pub-header">
@@ -180,7 +180,7 @@
                                 <p>This paper quantifies the welfare effects of battery electric vehicle subsidy policies in China...</p>
                             </div>
                         </div>
-                    </div>
+                    </article> <!-- 结束 <article> -->
                 </div>
             </div>
 
@@ -188,7 +188,7 @@
             <div class="year-section">
                 <h3 class="year-header">2024</h3>
                 <div class="publications-list">
-                    <div class="publication-item" data-type="journal">
+                    <article class="publication-item" data-type="journal"> <!-- 使用 <article> -->
                         <div class="publication-content">
                             <h3 class="publication-title">Environmental and social welfare effects of aviation liberalization: Evidence from Central Asia and China market</h3>
                             <div class="pub-header">
@@ -219,9 +219,9 @@
                                 <p>This study evaluates the environmental and welfare effects of vehicle purchase tax policies in China...</p>
                             </div>
                         </div>
-                    </div>
+                    </article> <!-- 结束 <article> -->
 
-                    <div class="publication-item" data-type="journal">
+                    <article class="publication-item" data-type="journal"> <!-- 使用 <article> -->
                         <div class="publication-content">
                             <h3 class="publication-title">Carbon Pricing and Airline Network Selection: A Four-Network Perspective</h3>
                             <div class="pub-header">
@@ -249,7 +249,7 @@
                                 <p>This research examines how carbon pricing policies influence airline network selection decisions...</p>
                             </div>
                         </div>
-                    </div>
+                    </article> <!-- 结束 <article> -->
                 </div>
             </div>
 
@@ -257,7 +257,7 @@
             <div class="year-section">
                 <h3 class="year-header">2022</h3>
                 <div class="publications-list">
-                    <div class="publication-item" data-type="journal">
+                    <article class="publication-item" data-type="journal"> <!-- 使用 <article> -->
                         <div class="publication-content">
                             <h3 class="publication-title">Environmental and Welfare Effects of Vehicle Purchase Tax: Evidence from China</h3>
                             <div class="pub-header">
@@ -287,7 +287,7 @@
                                 <p>This study evaluates the environmental and welfare effects of vehicle purchase tax policies in China...</p>
                             </div>
                         </div>
-                    </div>
+                    </article> <!-- 结束 <article> -->
                 </div>
             </div>
         </section>
@@ -298,7 +298,7 @@
                 <h2>Research Projects</h2>
             </div>
             <div class="projects-list">
-                <div class="project-item">
+                <article class="project-item"> <!-- 使用 <article> -->
                     <div class="project-badge">
                         <i class="fas fa-award"></i>
                         <span class="project-type">China Postdoctoral Science Foundation</span>
@@ -328,36 +328,72 @@
             </div>
         </section>
 
-        <section id="skills" class="section-card">
+        <section id="reviewer" class="section-card">
             <div class="section-header">
-                <i class="fas fa-tools"></i>
-                <h2>Professional Skills</h2>
+                <i class="fas fa-book-reader"></i>
+                <h2>Journal Reviewer</h2>
             </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <div class="skill-header data-analysis">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Data Analysis</h3>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Matlab</span>
-                        <span class="skill-tag">Stata</span>
+            <div class="reviewer-list">
+                <div class="reviewer-category">
+                    <h3 class="category-header"><i class="fas fa-leaf"></i> Low-Carbon Economy</h3>
+                    <div class="reviewer-item">
+                        <div class="reviewer-content">
+                            <div class="journal-info">
+                                <h4>Energy Economics <span class="journal-metrics">
+                                    <span class="metric-badge ssci">SSCI</span>
+                                    <span class="metric-badge q1">JCR Q1</span>
+                                    <span class="metric-badge if">IF: 13.6</span>
+                                </span></h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <div class="skill-header database">
-                        <i class="fas fa-database"></i>
-                        <h3>Database</h3>
-                        <span class="skill-tag">MySQL</span>
+                <div class="reviewer-category">
+                    <h3 class="category-header"><i class="fas fa-plane"></i> Low-Carbon Transportation</h3>
+                    <div class="reviewer-item">
+                        <div class="reviewer-content">
+                            <div class="journal-info">
+                                <h4>Transportation Research Part A <span class="journal-metrics">
+                                    <span class="metric-badge ssci">SSCI</span>
+                                    <span class="metric-badge q1">JCR Q1</span>
+                                    <span class="metric-badge if">IF: 7.1</span>
+                                </span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewer-item">
+                        <div class="reviewer-content">
+                            <div class="journal-info">
+                                <h4>Transport Policy <span class="journal-metrics">
+                                    <span class="metric-badge ssci">SSCI</span>
+                                    <span class="metric-badge q2">JCR Q2</span>
+                                    <span class="metric-badge if">IF: 4.7</span>
+                                </span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewer-item">
+                        <div class="reviewer-content">
+                            <div class="journal-info">
+                                <h4>Transport Economics and Management <span class="journal-metrics">
+                                    <span class="metric-badge new">ESCI</span>
+                                </span></h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <div class="skill-header tools">
-                        <i class="fas fa-code"></i>
-                        <h3>Development Tools</h3>
-                        <span class="skill-tag">VSCode</span>
-                        <span class="skill-tag">GitHub</span>
+                <div class="reviewer-category">
+                    <h3 class="category-header"><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="reviewer-item">
+                        <div class="reviewer-content">
+                            <div class="journal-info">
+                                <h4>Journal of Mathematical Modeling <span class="journal-metrics">
+                                    <span class="metric-badge sci">SCI</span>
+                                </span></h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
