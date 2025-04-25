@@ -18,11 +18,11 @@
                     </div>
                     <div class="profile-info">
                         <h1>Qing Ji</h1>
-                        <p class="title">Lecturer · Graduate Supervisor</p>
+                        <p class="title">讲师 · 研究生导师</p>
                         <div class="contact-info">
                             <div class="contact-item">
                                 <i class="fas fa-university"></i>
-                                <span>SEM, China University of Petroleum (Beijing)</span>
+                                <span>中国石油大学(北京) 经济管理学院</span>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
@@ -41,13 +41,34 @@
 
     <nav class="nav">
         <div class="nav-links">
-            <a href="#research">Research Areas</a>
-            <a href="#education">Education</a>
-            <a href="#publications">Publications</a>
-            <a href="#projects">Projects</a>
-            <a href="#reviewer">Reviewer</a>
+            <a href="#research">研究领域</a>
+            <a href="#education">教育背景</a>
+            <a href="#publications">学术成果</a>
+            <a href="#projects">研究项目</a>
+            <a href="#reviewer">期刊审稿</a>
         </div>
     </nav>
+
+    <!-- 新增特色展示区域 -->
+    <div class="container">
+        <div class="feature-showcase">
+            <div class="feature-item">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>学术研究</h3>
+                <p>专注于能源经济学、航空经济学和实证产业组织领域的研究</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-book"></i>
+                <h3>学术成果</h3>
+                <p>在SSCI期刊发表多篇高质量学术论文</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-project-diagram"></i>
+                <h3>研究项目</h3>
+                <p>主持和参与多项国家级和省部级研究项目</p>
+            </div>
+        </div>
+    </div>
 
     <main class="container">
         <section id="research" class="section-card">
@@ -342,7 +363,6 @@
                                 <h4>Energy Economics <span class="journal-metrics">
                                     <span class="metric-badge ssci">SSCI</span>
                                     <span class="metric-badge q1">JCR Q1</span>
-                                    <span class="metric-badge if">IF: 13.6</span>
                                 </span></h4>
                             </div>
                         </div>
@@ -354,10 +374,9 @@
                     <div class="reviewer-item">
                         <div class="reviewer-content">
                             <div class="journal-info">
-                                <h4>Transportation Research Part A <span class="journal-metrics">
+                                <h4>Transportation Research Part A: Policy and Practice<span class="journal-metrics">
                                     <span class="metric-badge ssci">SSCI</span>
                                     <span class="metric-badge q1">JCR Q1</span>
-                                    <span class="metric-badge if">IF: 7.1</span>
                                 </span></h4>
                             </div>
                         </div>
@@ -367,8 +386,7 @@
                             <div class="journal-info">
                                 <h4>Transport Policy <span class="journal-metrics">
                                     <span class="metric-badge ssci">SSCI</span>
-                                    <span class="metric-badge q2">JCR Q2</span>
-                                    <span class="metric-badge if">IF: 4.7</span>
+                                    <span class="metric-badge q1">JCR Q1</span>
                                 </span></h4>
                             </div>
                         </div>
@@ -390,7 +408,7 @@
                         <div class="reviewer-content">
                             <div class="journal-info">
                                 <h4>Journal of Mathematical Modeling <span class="journal-metrics">
-                                    <span class="metric-badge sci">SCI</span>
+                                    <span class="metric-badge new">ESCI</span>
                                 </span></h4>
                             </div>
                         </div>
@@ -404,11 +422,58 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <p class="copyright">© 2025 Qing Ji</p>
-                    <p class="update-info">Last Updated: April 2025</p>
+                    <p class="copyright">© 2024 Qing Ji. All Rights Reserved.</p>
+                    <p class="update-info">Last Updated: June 2024</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-google-scholar"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-researchgate"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // 添加滚动监听，使导航栏在滚动时固定
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 300) {
+                nav.classList.add('sticky-nav');
+            } else {
+                nav.classList.remove('sticky-nav');
+            }
+        });
+
+        // 添加摘要切换功能
+        document.querySelectorAll('.abstract-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const abstract = this.closest('.publication-content').querySelector('.pub-abstract');
+                abstract.style.display = abstract.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // 添加筛选功能
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+
+                // 更新活动按钮
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                // 筛选出版物
+                document.querySelectorAll('.publication-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-type') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
